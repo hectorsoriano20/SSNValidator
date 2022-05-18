@@ -1,7 +1,7 @@
 
-# SSN Validator - Tests
+# SSN Validator - Pruebas a realizar
 
-## Table of contents
+## Indice
 1. [Test case 1](#test-1)
 2. [Test case 2](#test-2)
 3. [Test case 3](#test-3)
@@ -17,7 +17,7 @@
 | Input | 500-25-9291 |
 | Steps | <ol><li>Execute the application</li><li>Enter the valid SSN.</li><li>Press ENTER.</li></ol>
 | Expected result | Valid SSN. |
-| Actual result | El SSN es valido. |
+| Actual result | True |
 
 ## Test 2
 | Concept | Description |
@@ -28,7 +28,7 @@
 | Input | Empty |
 | Steps | <ol><li>Execute the application</li><li>Do not enter any SSN, whether valid or invalid.</li><li>Press ENTER.</li></ol> |
 | Expected result | Invalid SSN |
-| Actual result | El SSN es invalido. |
+| Actual result | False |
 
 ## Test 3
 | Concept | Description |
@@ -39,7 +39,7 @@
 | Input | 4432-55-335 |
 | Steps | <ol><li>Execute the application</li><li>Enter the invalid SSN due to bad format.</li><li>Press ENTER.</li></ol>
 | Expected result | Invalid SSN |
-| Actual result | El SSN es invalido.|
+| Actual result | False |
 
 ## Test 4
 | Concept | Description |
@@ -50,7 +50,7 @@
 | Input | 001-34-0965 |
 | Steps | <ol><li>Execute the application</li><li>Enter the invalid SSN due to bad first part.</li><li>Press ENTER.</li></ol>
 | Expected result | Invalid SSN |
-| Actual result | El SSN es invalido. |
+| Actual result | False |
 
 ## Test 5
 | Concept | Description |
@@ -61,7 +61,7 @@
 | Input | 012-01-9876
 | Steps | <ol><li>Execute the application</li><li>Enter the invalid SSN due to bad second part.</li><li>Press ENTER.</li></ol>
 | Expected result | Invalid SSN|
-| Actual result | El SSN es invalido.|
+| Actual result | False |
 
 ## Test 6
 | Concept | Description |
@@ -72,4 +72,4 @@
 | Input | 667-00-9875
 | Steps | <ol><li>Execute the application</li><li>Enter the invalid SSN due to bad second part.</li><li>Press ENTER.</li></ol>
 | Expected result | Invalid SSN|
-| Actual result | El SSN es invalido.|
+| Actual result | False |
